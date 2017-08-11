@@ -1,0 +1,254 @@
+<!--Start of code -->
+<!-- 
+OU SRT Website
+Nickalas Reynolds
+nickreynolds@ou.edu
+Made March 2017 
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<!--####################-->
+<!-- Header information -->
+<!--####################-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Small Radio Telescope">
+    <meta name="author" content="Nickalas Reynolds">
+    <meta HTTP-EQUIV="refresh" CONTENT="10">
+
+    <title>Nielsen Small Radio Telescope</title>
+
+    <!--####################-->
+    <!-- Bootstrap Core CSS -->
+    <!--####################-->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+    <!--##############-->
+    <!-- Custom Fonts -->
+    <!--##############-->
+    <link href="./css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./css/w3.css">
+
+    <!--###########-->
+    <!-- Theme CSS -->
+    <!--###########-->
+    <link rel="stylesheet" href="./css/grayscale.min.css">
+    <link rel="stylesheet" href="./stylesheets/index.css">
+
+    <!--#############-->
+    <!-- Javascripts -->
+    <!--#############-->
+    <style>
+        /* For width 400px and larger: */
+        @media all and (min-width: 400px) {.lart {text-align:left;-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1;}.lart .rart {text-align:left;-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1;}.rart{-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}}
+    </style>
+    <script src="js/moment.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.simpleWeather.min.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="./js/collapse_toolbar.js"></script>
+    <script src="./js/index.js"></script>
+
+
+    <!--##########################-->
+    <!-- E-obsfucation Javascript -->
+    <!--##########################-->
+    <script src="./js/touch.js"></script>
+
+</head>
+<style type="text/css">
+html,body {
+    background: url('./img/coming_soon.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width:100%;
+    height:100%;
+}
+</style>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!--############-->
+    <!-- Navigation -->
+    <!--############-->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                  <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <i class="fa fa-play-circle"></i> <span class="light">OU SRT Home</span>
+                </a>
+            </div>
+            <!--####################-->
+            <!-- Bottom contact bar -->
+            <!--####################-->
+            <div class="about clearfix navbar-fixed-bottom">
+                <p class="pull-left">OU SRT</p>
+                <div class="social pull-right">
+                    <a><script>touch3("nhnradiotelescope","groups.ou",5,"")</script></a>
+                    <a href="https://github.com/OUsrt/srtn" target="blank"> <i class="fa fa-github"></i></a>
+                    <a href="https://github.com/OUsrt/srtn.git" target="blank"><i class="fa fa-download"></i></a>
+                </div>
+            </div>
+
+            <!--#################-->
+            <!-- Navbar toggling -->
+            <!--#################-->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#images">Live Images</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#weather">Weather</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#goes">GOES X-Ray</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#highlights">Highlights</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#chat">Chat</a>
+                    </li>
+                </ul>
+            </div> <!-- /.navbar-collapse -->
+        </div> <!-- /.container -->
+    </nav>
+
+    <!--##############-->
+    <!-- Intro Header -->
+    <!--##############-->
+    <header class="intro">
+        <div class="intro-body row container">
+            <div class="col-md-8 col-md-offset-2">
+                <h1> Nielsen Hall Small Radio Telescope </h1><br>
+                <div class="flex-containerimg w3-display-position center" id="images">
+                    <div class="lart img">
+                        <h3>SRT</h3>
+                        <a href="https://www.nhn.ou.edu/srt/img/curr_live_img.jpg" target="_blank"> <img src="./img/curr_live_img.jpg" alt="Live Camera" width="70%"></a>
+                    </div>
+                    <div class="center">
+                        <h3>Observer</h3>
+                    </div>
+                    <div class="rart img">
+                        <h3>Controller Software</h3>
+                        <a href="https://www.nhn.ou.edu/srt/img/curr_terminal.jpg" target="_blank"> <img src="./img/curr_terminal.jpg" alt="SRTN Program" width="100%"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--####################-->
+    <!-- Inbetween Sections -->
+    <!--####################-->    
+    <section class="xcaption fixed" >
+        <span class="border" style="background-color:transparent;font-size:15px;color: #f7f7f7;height:10px">Astronomy compels the soul to look upwards and leads is from this world to another - Plato</span>
+    </section>
+
+    <!--#########-->
+    <!-- Weather -->
+    <!--#########-->
+    <section id="weather" class="flex-container center">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h3>Weather</h3>
+            </div>
+    </section><br>
+
+    <!--####################-->
+    <!-- Inbetween Sections -->
+    <!--####################-->
+    <div class="xcaption" >
+        <span class="border" style="background-color:transparent;font-size:15px;color: #f7f7f7;height:10px">In Physics, you don't have to go around making trouble for yourself, nature does it for you -- Frank Wilczek</span>
+    </div>
+
+    <!--###########-->
+    <!-- GOES XRAY -->
+    <!--###########-->
+    <section id='goes' class="flex-container center">
+        <h2>GOES X-Ray Flux</h2>
+        <div class="">
+            <a href="http://services.swpc.noaa.gov/images/goes-xray-flux.gif" target="_blank"><img src="http://services.swpc.noaa.gov/images/goes-xray-flux.gif" width="50%"></a>
+        </div>
+    </section>
+
+    <!--####################-->
+    <!-- Inbetween Sections -->
+    <!--####################-->
+    <div class="xcaption" >
+        <span class="border" style="background-color:transparent;font-size:15px;color: #f7f7f7;height:10px">...Across the sea of space, the stars are other suns. - Carl Sagan</span>
+    </div>
+
+    <!--############-->
+    <!-- Highlights -->
+    <!--############-->
+    <section class="flex-containerimg w3-display-middle" id="highlights">
+        <h3 class="center">Jun 03, Solar Flare</h3>
+        <div class="lart img">
+            <h3>SRT Window</h3>
+            <a href="https://www.nhn.ou.edu/srt/img/solar_flare_srtn.jpg" target="_blank"><img src="./img/solar_flare_srtn.jpg" alt="Live Camera" width="75%"></a>
+        </div>
+        <div class="rart img">
+            <h3>Relative Flux Comparison</h3>
+            <a href="https://www.nhn.ou.edu/srt/img/solar_flare_reduc.jpg" target="_blank"><img src="./img/solar_flare_reduc.jpg" alt="SRTN Program" width="120%"></a>
+        </div>
+    </section>  
+
+    <!--####################-->
+    <!-- Inbetween Sections -->
+    <!--####################-->    
+    <div class="xcaption" >
+        <span class="border" style="background-color:transparent;font-size:15px;color: #f7f7f7;height:10px">The sky calls to us. If we do not destroy ourselves, we will one day venture to the stars. - Carl Sagan</span>
+    </div>
+
+    <!--##########-->
+    <!-- Projects -->
+    <!--##########-->
+    <section id="projects" class="flex-container center">
+        <div class="intro-body row container">
+            <div class="col-md-8 col-md-offset-2">
+                <h3> SRT is operational but receiving upgrades including a mounted, remote 1420MHz Noise Source and multi-feed access</h3><br>
+                <h3> VSRT Is Operational, however not equipped for remote observations.  </h3><br>  
+            </div>
+        </div>  
+    </section>
+
+    <!--####################-->
+    <!-- Inbetween Sections -->
+    <!--####################-->
+    <div class="xcaption" >
+        <span class="border" style="background-color:transparent;font-size:15px;color: #f7f7f7;height:10px">...Man explores the universe around him and calls the adventure science - Edwin Hubble</span>
+    </div>
+
+    <!--#########-->
+    <!-- Discord -->
+    <!--#########-->
+    <section class="flex-container center" id='chat'>
+        <div>
+            <iframe src="https://discordapp.com/widget?id=319694325254586368&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
+        </div>  
+
+    <!--####################-->
+    <!-- Inbetween Sections -->
+    <!--####################-->    
+    <div class="xcaption" >
+        <span class="border" style="background-color:transparent;font-size:15px;color: #f7f7f7;height:10px">We are an impossibility in an impossible Universe - Ray Bradbury</span>
+    </div>
+
+
+</body>
+</html>
