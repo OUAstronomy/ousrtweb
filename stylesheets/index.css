@@ -1,4 +1,25 @@
+.containerf ul li {
+  margin:2px;
+  min-height: 200px;
+  padding:2px;
+  width:  30%;
+  height: 100%;
+  float: left; 
+  list-style:none;
+ 
+}
+
 .flex-containerimg {
+    display: -webkit-flex;
+    display: flex;  
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    text-align: center;
+    position: relative;
+    margin-bottom: 10%;
+    width: 100%;
+}
+.flex-containerimgf {
     display: -webkit-flex;
     display: flex;  
     -webkit-flex-flow: row wrap;
