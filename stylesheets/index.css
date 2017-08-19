@@ -220,8 +220,7 @@ i {
   margin-bottom: 20px;
 }
 #weather li {
-  background: #fff;
-  background: rgba(128,128,128);
+  background-color:rgba(0,0,0,0.6);
   padding: 1px;
   display: inline-block;
   border-radius: 1px;
@@ -272,10 +271,9 @@ i {
   font-weight: 300;
   display: inline-block;
   margin: 1px;
-  color: #fff;
+  background-color:rgba(0,0,0,0.4);
   text-align: center;
   text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
-  background: rgba(128,128,128);
 
 }
 .about .social {
@@ -335,3 +333,28 @@ i {
  }
 }
 
+#clockdiv{
+  font-family: sans-serif;
+  display: inline-block;
+  font-weight: 100;
+  background-color:rgba(0,0,0,0.6);
+  text-align: center;
+  font-size: 30px;
+}
+
+#clockdiv > div{
+  padding: 10px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+#clockdiv div > span{
+  padding: 15px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.smalltext{
+  padding-top: 5px;
+  font-size: 16px;
+}
