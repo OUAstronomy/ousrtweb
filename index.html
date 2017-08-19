@@ -49,8 +49,8 @@ Made March 2017
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.simpleWeather.min.js"></script>
     <script src="js/weather.js"></script>
-    <script src="./js/collapse_toolbar.js"></script>
-    <script src="./js/index.js"></script>
+    <script src="js/collapse_toolbar.js"></script>
+    <script src="js/index.js"></script>
 
 
     <!--##########################-->
@@ -136,7 +136,25 @@ html,body {
         <div class="intro-body row containerf">
             <div class="col-md-8 col-md-offset-2">
                 <h1> Nielsen Hall Small Radio Telescope </h1><br>
-                <h2><p style="color:yellow"> !!! LIVE SOLAR ECLIPSE OBSERVATIONS !!! </p></h2>
+                <h2><p style="color:yellow"> !!! Solar Eclipse Countdown Clock !!! </p></h2>
+                <div id="clockdiv" class="intro-body row">
+                    <div>
+                        <span class="days"></span>
+                        <div class="smalltext">Days</div>
+                    </div>
+                    <div>
+                        <span class="hours"></span>
+                        <div class="smalltext">Hours</div>
+                    </div>
+                    <div>
+                        <span class="minutes"></span>
+                        <div class="smalltext">Minutes</div>
+                    </div>
+                    <div>
+                        <span class="seconds"></span>
+                        <div class="smalltext">Seconds</div>
+                    </div>
+                </div>
                 <div class="flex-containerimg container" id="images">
                 <ul>
                     <li>
@@ -254,5 +272,6 @@ html,body {
     </div>
 
 
+    <script src="js/countdown.js"></script>
 </body>
 </html>
