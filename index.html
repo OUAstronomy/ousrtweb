@@ -50,8 +50,17 @@ Made March 2017
     <script src="js/jquery.simpleWeather.min.js"></script>
     <script src="js/weather.js"></script>
     <script src="js/collapse_toolbar.js"></script>
-    <script src="js/index.js"></script>
-
+    <script src="js/index.js"></script>    
+    <script type="text/javascript"
+        src="js/jquery.reloader.js"></script>
+    <script>
+            $(document).ready(
+                    function() {
+                        setInterval(function() {
+                            $('#show').text();
+                        }, 3000);
+                    });
+    </script>
 
     <!--##########################-->
     <!-- E-obsfucation Javascript -->
@@ -102,7 +111,7 @@ html,body {
             <!--#################-->
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
                 <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section , UPDATE DOWNLOADS>HTML WHEN CHANGES ARE MADE-->
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
@@ -124,6 +133,12 @@ html,body {
                     <li>
                         <a class="page-scroll" href="#chat">Chat</a>
                     </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="./downloads.html"  target="blank">Downloads</a>
+                    </li>
                 </ul>
             </div> <!-- /.navbar-collapse -->
         </div> <!-- /.container -->
@@ -132,10 +147,10 @@ html,body {
     <!--##############-->
     <!-- Intro Header -->
     <!--##############-->
-    <header class="intro">
+    <header style="padding-top: 150px;">
         <div class="intro-body row containerf">
             <div class="col-md-8 col-md-offset-2">
-                <h1> Nielsen Hall Small Radio Telescope </h1><br>
+                <h1><center>Nielsen Hall Small Radio Telescope </center></h1><br>
                 <!-- Solar Eclipse countdown
                 <h2><p style="color:yellow"> !!! Solar Eclipse Countdown Clock !!! </p></h2>
                 <div id="clockdiv" class="intro-body row">
@@ -157,21 +172,23 @@ html,body {
                     </div>
                 </div>
                 -->
-                <div class="flex-containerimg container" id="images">
-                <ul>
-                    <li>
-                        <h3>SRT Camera<br><p style="color:green">Live</p></h3>
-                        <a href="https://www.nhn.ou.edu/srt/img/curr_live_img.jpg" target="_blank"> <img src="./img/curr_live_img.jpg" alt="Live Camera" width="100%"></a>
-                    </li>
-                    <li>
-                        <h3>SRTN Software<br><p style="color:green">Live</p></h3>
-                        <a href="https://www.nhn.ou.edu/srt/img/curr_terminal.jpg" target="_blank"> <img src="./img/curr_terminal.jpg" alt="SRTN Program" width="100%"></a>
-                    </li>
-                    <li>
-                        <h3>Integrated Flux<br><p style="color:green">Live</p></h3>
-                        <a href="https://www.nhn.ou.edu/srt/img/realsun_integ.png" target="_blank"> <img src="./img/realsun_integ.png" alt="Integrated Flux" width="107.5%"></a>
-                    </li>
-                </ul>
+                <div id="show">
+                    <div class="flex-containerimg container" id="images">
+                        <ul>
+                            <li>
+                                <h3>SRT Camera<br><p style="color:green">Live</p></h3>
+                                <a href="https://www.nhn.ou.edu/srt/img/curr_live_img.jpg" target="_blank"> <img src="./img/curr_live_img.jpg" alt="Live Camera" width="100%"></a>
+                            </li>
+                            <li>
+                                <h3>SRTN Software<br><p style="color:green">Live</p></h3>
+                                <a href="https://www.nhn.ou.edu/srt/img/curr_terminal.jpg" target="_blank"> <img src="./img/curr_terminal.jpg" alt="SRTN Program" width="100%"></a>
+                            </li>
+                            <li>
+                                <h3>Integrated Flux<br><p style="color:green">Live</p></h3>
+                                <a href="https://www.nhn.ou.edu/srt/img/realsun_integ.png" target="_blank"> <img src="./img/realsun_integ.png" alt="Integrated Flux" width="107.5%"></a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -272,6 +289,20 @@ html,body {
     <div class="xcaption" >
         <span class="border" style="background-color:transparent;font-size:15px;color: #f7f7f7;height:10px">We are an impossibility in an impossible Universe - Ray Bradbury</span>
     </div>
+
+    <!--#################-->
+    <!-- Contact Section -->
+    <!--#################-->
+    <section id="contact" class="flex-container center" style="padding-bottom: 50px">
+        <p>If you are interested in our work and would like to host your own observation/learn more about hor the telescope operates, please contact us: </p>
+        <p><a><script>touch("jjtobin","ou",5,"")</script></a></p>
+        <p><a><script>touch("nickreynolds","ou",5,"")</script></a></p>
+        <ul class="list-inline banner-social-buttons">
+            <li>
+                <a href="https://github.com/nickalaskreynolds" class="btn btn-default btn-lg" target="blank"><i class="fa fa-github fa-fw"></i><span class="network-name">Github</span></a>
+            </li>
+        </ul>
+    </section>
 
 
     <script src="js/countdown.js"></script>
