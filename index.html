@@ -51,16 +51,6 @@ Made March 2017
     <script src="js/weather.js"></script>
     <script src="js/collapse_toolbar.js"></script>
     <script src="js/index.js"></script>    
-    <script type="text/javascript"
-        src="js/jquery.reloader.js"></script>
-    <script>
-            $(document).ready(
-                    function() {
-                        setInterval(function() {
-                            $('#show').text();
-                        }, 3000);
-                    });
-    </script>
 
     <!--##########################-->
     <!-- E-obsfucation Javascript -->
@@ -172,23 +162,21 @@ html,body {
                     </div>
                 </div>
                 -->
-                <div id="show">
-                    <div class="flex-containerimg container" id="images">
-                        <ul>
-                            <li>
-                                <h3>SRT Camera<br><p style="color:green">Live</p></h3>
-                                <a href="https://www.nhn.ou.edu/srt/img/curr_live_img.jpg" target="_blank"> <img src="./img/curr_live_img.jpg" alt="Live Camera" width="100%"></a>
-                            </li>
-                            <li>
-                                <h3>SRTN Software<br><p style="color:green">Live</p></h3>
-                                <a href="https://www.nhn.ou.edu/srt/img/curr_terminal.jpg" target="_blank"> <img src="./img/curr_terminal.jpg" alt="SRTN Program" width="100%"></a>
-                            </li>
-                            <li>
-                                <h3>Integrated Flux<br><p style="color:green">Live</p></h3>
-                                <a href="https://www.nhn.ou.edu/srt/img/realsun_integ.png" target="_blank"> <img src="./img/realsun_integ.png" alt="Integrated Flux" width="107.5%"></a>
-                            </li>
-                        </ul>
-                    </div>
+                <div class="flex-containerimg container" id="images">
+                    <ul>
+                        <li>
+                            <h3>SRT Camera<br><p style="color:green">Live</p></h3>
+                            <a href="https://www.nhn.ou.edu/srt/img/curr_live_img.jpg" target="_blank"> <img src="./img/curr_live_img.jpg" alt="Live Camera" width="100%"></a>
+                        </li>
+                        <li>
+                            <h3>SRTN Software<br><p style="color:green">Live</p></h3>
+                            <a href="https://www.nhn.ou.edu/srt/img/curr_terminal.jpg" target="_blank"> <img src="./img/curr_terminal.jpg" alt="SRTN Program" width="100%"></a>
+                        </li>
+                        <li>
+                            <h3>Integrated Flux<br><p style="color:green">Live</p></h3>
+                            <a href="https://www.nhn.ou.edu/srt/img/realsun_integ.png" target="_blank"> <img src="./img/realsun_integ.png" alt="Integrated Flux" width="107.5%"></a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
