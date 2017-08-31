@@ -1,5 +1,11 @@
 In order to update the image for the website, run the shell_updater.sh script
 
+BACKUP DIR
+Use GIT!!!!!
+git add <files>
+git commit -m "description"
+git push -u ryleorigin master:<MON.DAY.YEAR>
+
 FILE/DIR EXPLANATION:
 
 index.html            main website
