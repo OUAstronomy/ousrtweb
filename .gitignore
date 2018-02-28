@@ -1,11 +1,7 @@
 window_images
 camera_images
 
-all_images/curr_live_img.jpg
-all_images/curr_terminal.jpg
-all_images/realsun_integ.png
 python_integrated
-all_images
 .realsun_int_count
 .srt_win_count
 interesting
