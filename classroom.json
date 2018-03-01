@@ -1,0 +1,76 @@
+{
+  "modules": [
+    {
+      "desc": "",
+      "name": "Beam Profile",
+      "data": "Beam Profile/exampledata.tar.gz",
+      "instructor": "Beam Profile/instructor.tar.gz",
+      "directions": "Beam Profile/README.md",
+      "bkgnd": "Beam Profile/bkgnd.jpg"
+    },
+    {
+      "desc": "",
+      "name": "Calibration Regions",
+      "data": "Calibration Regions/exampledata.tar.gz",
+      "instructor": "Calibration Regions/instructor.tar.gz",
+      "directions": "Calibration Regions/README.md",
+      "bkgnd": "Calibration Regions/bkgnd.jpg"
+    },
+    {
+      "desc": "",
+      "name": "Codes",
+      "data": "https://github.com/OUsrt/SRTscripts/archive/master.zip",
+      "instructor": "",
+      "directions": "Codes/README.md",
+      "bkgnd": "Codes/bkgnd.jpg"
+    },
+    {
+      "desc": "",
+      "name": "Download All",
+      "data": "Download All/allprojects.tar.gz",
+      "instructor": "",
+      "directions": "Download All/README.md",
+      "bkgnd": "Download All/bkgnd.jpg"
+    },
+    {
+      "desc": "",
+      "name": "Exotic Sources",
+      "data": "Exotic Sources/exampledata.tar.gz",
+      "instructor": "Exotic Sources/instructor.tar.gz",
+      "directions": "Exotic Sources/README.md",
+      "bkgnd": "Exotic Sources/bkgnd.jpg"
+    },
+    {
+      "desc": "",
+      "name": "HI Mapping",
+      "data": "HI Mapping/exampledata.tar.gz",
+      "instructor": "HI Mapping/instructor.tar.gz",
+      "directions": "HI Mapping/README.md",
+      "bkgnd": "HI Mapping/bkgnd.jpg"
+    },
+    {
+      "desc": "",
+      "name": "Manuals",
+      "data": "https://github.com/OUsrt/SRTmanuals/archive/master.zip",
+      "instructor": "",
+      "directions": "Manuals/README.md",
+      "bkgnd": "Manuals/bkgnd.jpg"
+    },
+    {
+      "desc": "",
+      "name": "Position Velocity",
+      "data": "Position Velocity/exampledata.tar.gz",
+      "instructor": "Position Velocity/instructor.tar.gz",
+      "directions": "Position Velocity/README.md",
+      "bkgnd": "Position Velocity/bkgnd.jpg"
+    },
+    {
+      "desc": "",
+      "name": "Solar Monitoring",
+      "data": "Solar Monitoring/exampledata.tar.gz",
+      "instructor": "Solar Monitoring/instructor.tar.gz",
+      "directions": "Solar Monitoring/README.md",
+      "bkgnd": "Solar Monitoring/bkgnd.jpg"
+    }
+  ]
+}
