@@ -15,10 +15,10 @@ Made March 2017
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Small Radio Telescope Downloads">
+    <meta name="description" content="SRT Downloads">
     <meta name="author" content="Nickalas Reynolds">
 
-    <title>Nielsen Small Radio Telescope Downloads</title>
+    <title>SRT Downloads</title>
     <!--####################-->
     <!-- Bootstrap Core CSS -->
     <!--####################-->
@@ -35,6 +35,11 @@ Made March 2017
     <!--###########-->
     <link rel="stylesheet" href="./css/grayscale.min.css">
     <link rel="stylesheet" href="./stylesheets/index.css">
+
+    <!--##########################-->
+    <!-- E-obsfucation Javascript -->
+    <!--##########################-->
+    <script src="./js/touch.js"></script>
 
     <!--#############-->
     <!-- Javascripts -->
@@ -67,7 +72,7 @@ html,body {
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                   <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="https://www.nhn.ou.edu/srt/#page-top">
+                <a class="navbar-brand page-scroll" href="./index.html#page-top">
                     <i class="fa fa-play-circle"></i> <span class="light">OU SRT Home</span>
                 </a>
             </div>
@@ -77,9 +82,9 @@ html,body {
             <div class="about clearfix navbar-fixed-bottom">
                 <p class="pull-left">OU SRT</p>
                 <div class="social pull-right">
-                    <a><script>touch3("nhnradiotelescope","groups.ou",5,"")</script></a>
-                    <a href="https://github.com/OUsrt/srtn" target="blank"> <i class="fa fa-github"></i></a>
-                    <a href="https://github.com/OUsrt/srtn.git" target="blank"><i class="fa fa-download"></i></a>
+                    <a><script>touch3("nickreynolds",".ou",5,"")</script></a>
+                    <a href="https://github.com/OUsrt/srtn" target="_blank"> <i class="fa fa-github"></i></a>
+                    <a href="https://github.com/OUsrt/srtn/archive/master.zip" target="blank"><i class="fa fa-download"></i></a>
                 </div>
             </div>
 
@@ -90,38 +95,35 @@ html,body {
                 <ul class="nav navbar-nav">
                     <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
                     <li class="hidden">
-                        <a href="https://www.nhn.ou.edu/srt/#page-top"></a>
+                        <a href="./index.html#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="https://www.nhn.ou.edu/srt/#images">Live Images</a>
+                        <a class="page-scroll" href="./index.html#weather">Weather</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="https://www.nhn.ou.edu/srt/#weather">Weather</a>
+                        <a class="page-scroll" href="./index.html#highlights">Highlights</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="https://www.nhn.ou.edu/srt/#goes">GOES X-Ray</a>
+                        <a class="page-scroll" href="./index.html#projects">Projects</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="https://www.nhn.ou.edu/srt/#highlights">Highlights</a>
+                        <a class="page-scroll" href="./index.html#contact">Contact</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="https://www.nhn.ou.edu/srt/#projects">Projects</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="https://www.nhn.ou.edu/srt/#chat">Chat</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="https://www.nhn.ou.edu/srt/#contact">Contact</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="./downloads.html" target="blank">Downloads</a>
+                        <a class="page-scroll" href="./downloads.html" target="_blank">Downloads</a>
                     </li>
                 </ul>
             </div> <!-- /.navbar-collapse -->
         </div> <!-- /.container -->
     </nav>
 
-    <div class="containerb" style="padding-top: 150px; padding-left: 40%; position: absolute">
+    <div class="containerb" style="padding-top: 150px; padding-left: 25%; position: absolute">
+        <h1>Data or Classroom links: </h1>
+        <ul style="list-style-type:square">
+            <li><a href="./instruction.html" target="_blank"><i class="fa fa-graduation-cap"></i>Classroom Materials</a></li>
+            <li><a href="https://github.com/OUsrt/srtn.git" target="_blank"><i class="fa fa-github fa-fw"></i><span class="network-name">Github link</span></a></li>
+            <li><a href="https://github.com/OUsrt/srtn/archive/master.zip" target="blank"><i class="fa fa-download"></i><span class="network-name">Zip Download</span></a></li>
+        </ul> 
         <h1>List of files:</h1>
         <ul style="list-style-type:square">
             <li><a href="./public_images/solar_flare_jun03_2017.jpg" >Solar Flare June 03 2017 </a></li>
@@ -135,11 +137,5 @@ html,body {
             <li><a href="./public_images/solar-flare-8-18-2017.jpg" > Solar Flare SRTN2 Aug 18 2017 </a></li>
         </ul> 
     </div>
-
-
-
-
-
 </body>
 </html>
-
