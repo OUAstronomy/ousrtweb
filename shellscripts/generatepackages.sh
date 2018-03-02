@@ -1,0 +1,1 @@
+./classroom/Download All/generatepackages.sh

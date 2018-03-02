@@ -1,0 +1,1 @@
+./classroom/Download All/generatedirectories.sh
