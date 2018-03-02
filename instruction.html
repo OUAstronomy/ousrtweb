@@ -52,6 +52,13 @@ Made March 2017
         /* For width 400px and larger: */
         @media all and (min-width: 400px) {.lart {text-align:left;-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1;}.lart .rart {text-align:left;-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1;}.rart{-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}}
     </style>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/moment.js"></script>
+    <script src="js/jquery.simpleWeather.min.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/collapse_toolbar.js"></script>
+    <script src="js/index.js"></script>    
 
 </head>
 <style type="text/css">
@@ -105,7 +112,7 @@ html,body {
                         <a class="page-scroll" href="./index.html#weather">Weather</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="./index.html#highlights">Highlights</a>
+                        <a class="page-scroll" href="./index.html#highlights">News</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="./index.html#projects">Projects</a>
@@ -114,23 +121,63 @@ html,body {
                         <a class="page-scroll" href="./index.html#contact">Contact</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="./downloads.html"  target="_blank">Downloads</a>
+                        <a class="page-scroll" href="./downloads.html"  target="_blank">Images</a>
                     </li>
                 </ul>
             </div> <!-- /.navbar-collapse -->
         </div> <!-- /.container -->
     </nav>
-    <!--
-    <div class="containerb" style="padding-top: 150px; padding-left: 25%; position: absolute">
-        <h3>For now use the github link or zip download:</h3>
-        <ul style="list-style-type:square">
-            <li><a href="https://github.com/OUsrt/srtn.git" target="_blank"><i class="fa fa-github fa-fw"></i><span class="network-name">Github link</span></a></li>
-            <li><a href="https://github.com/OUsrt/srtn/archive/master.zip" target="blank"><i class="fa fa-download"></i><span class="network-name">Github Zip Download</span></a></li>
-        </ul> 
-    </div>
-    -->  
 
-    
+    <!--##############-->
+    <!-- Intro Header -->
+    <!--##############-->
+    <header style="padding-top: 150px;">
+        <div class="intro-body row containerf">
+            <div class="col-md-8 col-md-offset-2">
+                <h1><center>Classroom Projects</center></h1><br>
+            </div>
+        </div>
+    </header>
+
+    <section class="flex-container center">
+        <div class="intro-body row container">
+            <div class="col-md-8 col-md-offset-2" id="startGrid" ></div>
+        </div>
+    </section>
+
+        <!--####################-->
+    <!-- Inbetween Sections -->
+    <!--####################-->    
+    <section class="xcaption fixed" >
+        <span class="border" style="background-color:transparent;font-size:15px;color: #f7f7f7;height:10px">Astronomy compels the soul to look upwards and leads is from this world to another - Plato</span>
+    </section>
+
+    <!--#########-->
+    <!-- Weather -->
+    <!--#########-->
+    <section id="weather" class="flex-container center">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h3>Weather</h3>
+            </div>
+    </section><br>
+
+    <!--####################-->
+    <!-- Inbetween Sections -->
+    <!--####################-->
+    <div class="xcaption" >
+        <span class="border" style="background-color:transparent;font-size:15px;color: #f7f7f7;height:10px">In Physics, you don't have to go around making trouble for yourself, nature does it for you -- Frank Wilczek</span>
+    </div>
+
+    <!--###########-->
+    <!-- GOES XRAY -->
+    <!--###########-->
+    <section class="flex-container center">
+        <h2>GOES X-Ray Flux</h2>
+        <div class="">
+            <a href="http://services.swpc.noaa.gov/images/goes-xray-flux.gif" target="_blank"><img src="http://services.swpc.noaa.gov/images/goes-xray-flux.gif" width="50%"></a>
+        </div>
+    </section>
+
 
 
 </body>
