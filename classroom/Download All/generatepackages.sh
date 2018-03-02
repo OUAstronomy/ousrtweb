@@ -24,6 +24,10 @@ if [[ -d "$NWD/allprojects" && ! -L "$NWD/allprojects" ]]; then
     echo "Please migrate or remove $NWD/allprojects"
     exit 0
 fi
+if [[ -f "$BASEDIR/allprojects.tar.gz" ]]; then
+    mv -f "$BASEDIR/allprojects.tar.gz" "$BASEDIR/allprojects.tar.gz.bak"
+    echo "Created backup: $BASEDIR/allprojects.tar.gz.bak"
+fi
 
 # create directory and tmp json file
 mkdir "$NWD/allprojects"
@@ -73,16 +77,6 @@ for f in *; do
         echo "      \"directions\": \"./classroom/$f/README.md\"," >> "$json"
         echo "      \"bkgnd\": \"./classroom/$f/bkgnd.jpg\"" >> "$json"
         echo "    }," >> "$json"
-        # copies all files to allprojects
-        cp -r "$f" "$NWD/allprojects/"
-        temp="`pwd`"
-        cd "$f"
-        for k in *; do
-            if [ -d "$k" ] && [ ! -L "$k" ]; then
-                tar -czf "$k.tar.gz" "$k"
-            fi
-        done
-        cd "$temp"
     fi
     if [ -d "$f" ] && [ ! -L "$f" ] && [ "$f" == "Manuals" ]; then
         # handles json file

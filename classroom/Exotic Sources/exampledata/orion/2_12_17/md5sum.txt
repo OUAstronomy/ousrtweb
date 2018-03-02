@@ -1,0 +1,15 @@
+393d3a5f404ee0b1f5eade15273ef10d  ./andromeda1.dat
+8c9f5dd1c5c60b6b12b391a98b8a2db3  ./andromeda3.dat
+f5239272e3c130354868ef32b2787ac9  ./andromeda4.dat
+50fd6b1c9837533c9b62cac59d47dacd  ./crab1.dat
+33400d80dabd3d82d0aafcf3e7e943c6  ./crab2.dat
+03a6464939e65e64b8d79297e43caf8b  ./moon1.dat
+9ed33a6c30b44a229d59a5775411dccf  ./moon2.dat
+c95ebe7db57d1a8bc5c6fed038f29f23  ./moon3.dat
+d589a1e3e853edbe97bc09ff9802cd0c  ./nickrun
+31cee86e7de0d04aee246be730d88a3a  ./noise1.dat
+bd570a76c8642f319405ffcd3a497cd2  ./noise2.dat
+a92300781b7e37e75b84d235dca9a1fe  ./orion1.dat
+8824393355bb717845ad10773f093686  ./orion2.dat
+326f75e4872e148d9dc9bb40392dbc1f  ./orion3.dat
+2682be58a5f1413643051120a335803e  ./orion4.dat

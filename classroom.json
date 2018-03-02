@@ -1,7 +1,7 @@
 {
   "modules": [
     {
-      "desc": "",
+      "desc": " Find and describe the profile of the primary beam for the telescope",
       "name": "Beam Profile",
       "data": "./classroom/Beam Profile/exampledata.tar.gz",
       "instructor": "./classroom/Beam Profile/instructor.tar.gz",
@@ -9,7 +9,7 @@
       "bkgnd": "./classroom/Beam Profile/bkgnd.jpg"
     },
     {
-      "desc": "",
+      "desc": " Calibration regions to use to test how sensitive and accurate the telescope and noise diode are.",
       "name": "Calibration Regions",
       "data": "./classroom/Calibration Regions/exampledata.tar.gz",
       "instructor": "./classroom/Calibration Regions/instructor.tar.gz",
@@ -17,7 +17,7 @@
       "bkgnd": "./classroom/Calibration Regions/bkgnd.jpg"
     },
     {
-      "desc": "",
+      "desc": " Houses the codes and scripts useful for reduction and observation",
       "name": "Codes",
       "data": "https://github.com/OUsrt/SRTscripts/archive/master.zip",
       "instructor": "",
@@ -25,7 +25,7 @@
       "bkgnd": "./classroom/Codes/bkgnd.jpg"
     },
     {
-      "desc": "",
+      "desc": " Download all the projects at once",
       "name": "Download All",
       "data": "./classroom/Download All/allprojects.tar.gz",
       "instructor": "",
@@ -33,7 +33,7 @@
       "bkgnd": "./classroom/Download All/bkgnd.jpg"
     },
     {
-      "desc": "",
+      "desc": " Exotic Sources like Andromeda or Casseopeia ",
       "name": "Exotic Sources",
       "data": "./classroom/Exotic Sources/exampledata.tar.gz",
       "instructor": "./classroom/Exotic Sources/instructor.tar.gz",
@@ -49,7 +49,7 @@
       "bkgnd": "./classroom/HI Mapping/bkgnd.jpg"
     },
     {
-      "desc": "",
+      "desc": " Contains the Hardware and Operator's Manual for the NHN SRT, along with a short cheatsheet for observing",
       "name": "Manuals",
       "data": "https://github.com/OUsrt/SRTmanuals/archive/master.zip",
       "instructor": "",
@@ -57,7 +57,7 @@
       "bkgnd": "./classroom/Manuals/bkgnd.jpg"
     },
     {
-      "desc": "",
+      "desc": " Find the rotation curve of the milky way galaxy",
       "name": "Position Velocity",
       "data": "./classroom/Position Velocity/exampledata.tar.gz",
       "instructor": "./classroom/Position Velocity/instructor.tar.gz",
@@ -65,7 +65,7 @@
       "bkgnd": "./classroom/Position Velocity/bkgnd.jpg"
     },
     {
-      "desc": "",
+      "desc": " Monitor variations in the sun to measure periods of activity",
       "name": "Solar Monitoring",
       "data": "./classroom/Solar Monitoring/exampledata.tar.gz",
       "instructor": "./classroom/Solar Monitoring/instructor.tar.gz",
