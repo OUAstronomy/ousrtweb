@@ -52,6 +52,14 @@ for f in *; do
         echo "    }," >> "$json"
         # copies all files to allprojects
         cp -r "$f" "$NWD/allprojects/"
+        temp="`pwd`"
+        cd "$f"
+        for k in *; do
+            if [ -d "$k" ] && [ ! -L "$k" ]; then
+                tar -czf "$k.tar.gz" "$k"
+            fi
+        done
+        cd "$temp"
     fi
     if [ -d "$f" ] && [ ! -L "$f" ] && [ "$f" == "Download All" ]; then
         # handles json file
@@ -67,6 +75,14 @@ for f in *; do
         echo "    }," >> "$json"
         # copies all files to allprojects
         cp -r "$f" "$NWD/allprojects/"
+        temp="`pwd`"
+        cd "$f"
+        for k in *; do
+            if [ -d "$k" ] && [ ! -L "$k" ]; then
+                tar -czf "$k.tar.gz" "$k"
+            fi
+        done
+        cd "$temp"
     fi
     if [ -d "$f" ] && [ ! -L "$f" ] && [ "$f" == "Manuals" ]; then
         # handles json file
@@ -82,6 +98,14 @@ for f in *; do
         echo "    }," >> "$json"
         # copies all files to allprojects
         cp -r "$f" "$NWD/allprojects/"
+        temp="`pwd`"
+        cd "$f"
+        for k in *; do
+            if [ -d "$k" ] && [ ! -L "$k" ]; then
+                tar -czf "$k.tar.gz" "$k"
+            fi
+        done
+        cd "$temp"
     fi
     if [ -d "$f" ] && [ ! -L "$f" ] && [ "$f" == "Codes" ]; then
         # handles json file
@@ -97,6 +121,14 @@ for f in *; do
         echo "    }," >> "$json"
         # copies all files to allprojects
         cp -r "$f" "$NWD/allprojects/"
+        temp="`pwd`"
+        cd "$f"
+        for k in *; do
+            if [ -d "$k" ] && [ ! -L "$k" ]; then
+                tar -czf "$k.tar.gz" "$k"
+            fi
+        done
+        cd "$temp"
     fi
 done
 sed -i "$ s/},/}/g" "$json"
