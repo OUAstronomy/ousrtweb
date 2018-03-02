@@ -41,7 +41,7 @@
       "bkgnd": "./classroom/Exotic Sources/bkgnd.jpg"
     },
     {
-      "desc": "",
+      "desc": " Map the HI emission along the plane of the galaxy and discover spiral structure",
       "name": "HI Mapping",
       "data": "./classroom/HI Mapping/exampledata.tar.gz",
       "instructor": "./classroom/HI Mapping/instructor.tar.gz",
