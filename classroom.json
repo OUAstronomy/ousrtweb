@@ -9,14 +9,6 @@
       "bkgnd": "./classroom/Beam Profile/bkgnd.jpg"
     },
     {
-      "desc": " Calibration regions to use to test how sensitive and accurate the telescope and noise diode are.",
-      "name": "Calibration Regions",
-      "data": "./classroom/Calibration Regions/exampledata.tar.gz",
-      "instructor": "./classroom/Calibration Regions/instructor.tar.gz",
-      "directions": "./classroom/Calibration Regions/README.md",
-      "bkgnd": "./classroom/Calibration Regions/bkgnd.jpg"
-    },
-    {
       "desc": " Houses the codes and scripts useful for reduction and observation",
       "name": "Codes",
       "data": "https://github.com/OUsrt/SRTscripts/archive/master.zip",
@@ -66,11 +58,19 @@
     },
     {
       "desc": " Monitor variations in the sun to measure periods of activity",
-      "name": "Solar Monitoring",
-      "data": "./classroom/Solar Monitoring/exampledata.tar.gz",
-      "instructor": "./classroom/Solar Monitoring/instructor.tar.gz",
-      "directions": "./classroom/Solar Monitoring/README.md",
-      "bkgnd": "./classroom/Solar Monitoring/bkgnd.jpg"
+      "name": "Solar Monitor",
+      "data": "./classroom/Solar Monitor/exampledata.tar.gz",
+      "instructor": "./classroom/Solar Monitor/instructor.tar.gz",
+      "directions": "./classroom/Solar Monitor/README.md",
+      "bkgnd": "./classroom/Solar Monitor/bkgnd.jpg"
+    },
+    {
+      "desc": " Calibration regions to use to test how sensitive and accurate the telescope and noise diode are.",
+      "name": "Standard Regions",
+      "data": "./classroom/Standard Regions/exampledata.tar.gz",
+      "instructor": "./classroom/Standard Regions/instructor.tar.gz",
+      "directions": "./classroom/Standard Regions/README.md",
+      "bkgnd": "./classroom/Standard Regions/bkgnd.jpg"
     }
   ]
 }
