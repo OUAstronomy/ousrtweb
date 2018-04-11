@@ -124,6 +124,29 @@ for f in *; do
         done
         cd "$temp"
     fi
+    if [ -d "$f" ] && [ ! -L "$f" ] && [ "$f" == "Presentation" ]; then
+        # handles json file
+        echo "    {" >> "$json"
+        DESC=`head -n 20 "$f/README.md" | grep "DESC"`
+        DESC="${DESC:5}"
+        echo "      \"desc\": \"$DESC\"," >> "$json"
+        echo "      \"name\": \"$f\"," >> "$json"
+        echo "      \"data\": \"./classroom/$f/Generalpresentation.pdf\"," >> "$json"
+        echo "      \"instructor\": \"./classroom/$f/OUpresentation.pdf\"," >> "$json"
+        echo "      \"directions\": \"./classroom/$f/README.md\"," >> "$json"
+        echo "      \"bkgnd\": \"./classroom/$f/bkgnd.jpg\"" >> "$json"
+        echo "    }," >> "$json"
+        # copies all files to allprojects
+        cp -r "$f" "$NWD/allprojects/"
+        temp="`pwd`"
+        cd "$f"
+        for k in *; do
+            if [ -d "$k" ] && [ ! -L "$k" ]; then
+                tar -czf "$k.tar.gz" "$k"
+            fi
+        done
+        cd "$temp"
+    fi
 done
 sed -i "$ s/},/}/g" "$json"
 echo "  ]" >> "$json"
