@@ -42,7 +42,7 @@ echo "  \"modules\": [" >> "$json"
 
 # copy files to this new directory for archiving: prevents recursion
 for f in *; do
-    if [ -d "$f" ] && [ ! -L "$f" ] && [ "$f" != "allprojects" ] && [ "$f" != "Download All" ] && [ "$f" != "Manuals" ] && [ "$f" != "Codes" ]; then
+    if [ -d "$f" ] && [ ! -L "$f" ] && [ "$f" != "allprojects" ] && [ "$f" != "Download All" ] && [ "$f" != "Manuals" ] && [ "$f" != "Codes" ] && [ "$f" != "Presentation" ]; then
         # handles json file
         echo "    {" >> "$json"
         DESC=`head -n 20 "$f/README.md" | grep "DESC"`
