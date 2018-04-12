@@ -103,12 +103,12 @@ bio = details
    })
   ;
   bio
-    .filter(function(d){ return d.data != "" || d.name != "Slides"; })
+    .filter(function(d){ return d.data != "" && d.name != "Slides"; })
     .append("h4")
     .text("Example Data:")
   ;
   bio
-    .filter(function(d){ return d.data != "" || d.name != "Slides"; })
+    .filter(function(d){ return d.data != "" && d.name != "Slides"; })
     .append("span")
     .append("a")
     .attr("href", function(d){ return d.data })
@@ -116,12 +116,12 @@ bio = details
     .text("Download Package >>")
   ;
   bio
-    .filter(function(d){ return d.instructor != "" || d.name != "Slides"; })
+    .filter(function(d){ return d.instructor != "" && d.name != "Slides"; })
     .append("h4")
     .text("Instructor:")
   ;
   bio
-    .filter(function(d){ return d.instructor != "" || d.name != "Slides"; })
+    .filter(function(d){ return d.instructor != "" && d.name != "Slides"; })
     .append("span")
     .append("a")
     .attr("href", function(d){ return d.instructor })
