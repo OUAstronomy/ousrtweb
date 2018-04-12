@@ -156,6 +156,11 @@ bio = details
   ;
   bio
     .filter(function(d){ return d.srtintro != ""; })
+    .append("h4")
+    .text("")
+  ;
+  bio
+    .filter(function(d){ return d.srtintro != ""; })
     .append("span")
     .append("a")
     .attr("href", function(d){ return d.srtintro })
@@ -164,11 +169,21 @@ bio = details
   ;
   bio
     .filter(function(d){ return d.srtcontrol != ""; })
+    .append("h4")
+    .text("")
+  ;
+  bio
+    .filter(function(d){ return d.srtcontrol != ""; })
     .append("span")
     .append("a")
     .attr("href", function(d){ return d.srtcontrol })
     .attr("target", "_blank")
     .text("Control the SRT >>")
+  ;
+  bio
+    .filter(function(d){ return d.srtreduc != ""; })
+    .append("h4")
+    .text("")
   ;
   bio
     .filter(function(d){ return d.srtreduc != ""; })
