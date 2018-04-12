@@ -140,7 +140,7 @@ bio = details
     .attr("href", function(d){ return d.directions })
     .attr("target", "_blank")
     .text("Download Package >>")
-  ;--------
+  ;
   bio
     .filter(function(d){ return d.srtintroou != ""; })
     .append("h4")
