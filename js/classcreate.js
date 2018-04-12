@@ -152,7 +152,7 @@ bio = details
     .append("a")
     .attr("href", function(d){ return d.srtintroou })
     .attr("target", "_blank")
-    .text("Intro to SRT (OU) >>")
+    .text("SRT (OU) >>")
   ;
   bio
     .filter(function(d){ return d.srtintro != ""; })
@@ -165,7 +165,7 @@ bio = details
     .append("a")
     .attr("href", function(d){ return d.srtintro })
     .attr("target", "_blank")
-    .text("Intro to SRT (external) >>")
+    .text("SRT (ex) >>")
   ;
   bio
     .filter(function(d){ return d.srtcontrol != ""; })
@@ -178,7 +178,7 @@ bio = details
     .append("a")
     .attr("href", function(d){ return d.srtcontrol })
     .attr("target", "_blank")
-    .text("Control the SRT >>")
+    .text("Control SRT >>")
   ;
   bio
     .filter(function(d){ return d.srtreduc != ""; })

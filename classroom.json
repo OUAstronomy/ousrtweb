@@ -57,14 +57,14 @@
       "bkgnd": "./classroom/Position Velocity/bkgnd.jpg"
     },
     {
-      "desc": " The Presentation in the instructors is for instructors at OU to use. It is less generalized and is specific towards the SRT ontop of Nielsen assuming they can have a tour of the building",
-      "name": "Presentation",
-      "srtintroou": "./classroom/Presentation/GeneralPresentation.pdf",
-      "srtintro": "./classroom/Presentation/OUPresentation.pdf",
-      "srtcontrol": "./classroom/Presentation/ControlPresentation.pdf",
-      "srtreduc": "./classroom/Presentation/ReductionPresentation.pdf",
-      "directions": "./classroom/Presentation/README.md",
-      "bkgnd": "./classroom/Presentation/bkgnd.jpg"
+      "desc": " Provides slides for teaching about SRT. If you can go to the SRT, use the SRT (OU) slides. Otherwise use the SRT (ex) slides.",
+      "name": "Slides",
+      "srtintroou": "./classroom/Slides/GeneralPresentation.pdf",
+      "srtintro": "./classroom/Slides/OUPresentation.pdf",
+      "srtcontrol": "./classroom/Slides/ControlPresentation.pdf",
+      "srtreduc": "./classroom/Slides/ReductionPresentation.pdf",
+      "directions": "./classroom/Slides/README.md",
+      "bkgnd": "./classroom/Slides/bkgnd.jpg"
     },
     {
       "desc": " Monitor variations in the sun to measure periods of activity",
