@@ -140,6 +140,43 @@ bio = details
     .attr("href", function(d){ return d.directions })
     .attr("target", "_blank")
     .text("Download Package >>")
+  ;--------
+  bio
+    .filter(function(d){ return d.srtintroou != ""; })
+    .append("h4")
+    .text("Slides:")
+  ;
+  bio
+    .filter(function(d){ return d.srtintroou != ""; })
+    .append("span")
+    .append("a")
+    .attr("href", function(d){ return d.srtintroou })
+    .attr("target", "_blank")
+    .text("Intro to SRT (OU) >>")
+  ;
+  bio
+    .filter(function(d){ return d.srtintro != ""; })
+    .append("span")
+    .append("a")
+    .attr("href", function(d){ return d.srtintro })
+    .attr("target", "_blank")
+    .text("Intro to SRT (external) >>")
+  ;
+  bio
+    .filter(function(d){ return d.srtcontrol != ""; })
+    .append("span")
+    .append("a")
+    .attr("href", function(d){ return d.srtcontrol })
+    .attr("target", "_blank")
+    .text("Control the SRT >>")
+  ;
+  bio
+    .filter(function(d){ return d.srtreduc != ""; })
+    .append("span")
+    .append("a")
+    .attr("href", function(d){ return d.srtreduc })
+    .attr("target", "_blank")
+    .text("Reduce data >>")
   ;
   d3
     .select("#orderName")
