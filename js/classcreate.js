@@ -103,12 +103,12 @@ bio = details
    })
   ;
   bio
-    .filter(function(d){ return d.data!= ""; })
+    .filter(function(d){ return d.data != "" or d.name != "Slides"; })
     .append("h4")
     .text("Example Data:")
   ;
   bio
-    .filter(function(d){ return d.data != ""; })
+    .filter(function(d){ return d.data != "" or d.name != "Slides"; })
     .append("span")
     .append("a")
     .attr("href", function(d){ return d.data })
@@ -116,12 +116,12 @@ bio = details
     .text("Download Package >>")
   ;
   bio
-    .filter(function(d){ return d.instructor != ""; })
+    .filter(function(d){ return d.instructor != "" or d.name != "Slides"; })
     .append("h4")
     .text("Instructor:")
   ;
   bio
-    .filter(function(d){ return d.instructor != ""; })
+    .filter(function(d){ return d.instructor != "" or d.name != "Slides"; })
     .append("span")
     .append("a")
     .attr("href", function(d){ return d.instructor })
@@ -142,51 +142,51 @@ bio = details
     .text("Download Package >>")
   ;
   bio
-    .filter(function(d){ return d.srtintroou != ""; })
+    .filter(function(d){ return d.srtintroou != "" and d.name == "Slides"; })
     .append("h4")
     .text("Slides:")
   ;
   bio
-    .filter(function(d){ return d.srtintroou != ""; })
+    .filter(function(d){ return d.srtintroou != "" and d.name == "Slides"; })
     .append("span")
     .append("a")
     .attr("href", function(d){ return d.srtintroou })
     .attr("target", "_blank")
-    .text("SRT (OU) >>")
+    .text("Intro to SRT (OU) >>")
   ;
   bio
-    .filter(function(d){ return d.srtintro != ""; })
+    .filter(function(d){ return d.srtintro != "" and d.name == "Slides"; })
     .append("h4")
     .text("")
   ;
   bio
-    .filter(function(d){ return d.srtintro != ""; })
+    .filter(function(d){ return d.srtintro != "" and d.name == "Slides"; })
     .append("span")
     .append("a")
     .attr("href", function(d){ return d.srtintro })
     .attr("target", "_blank")
-    .text("SRT (ex) >>")
+    .text("Intro to SRT (external) >>")
   ;
   bio
-    .filter(function(d){ return d.srtcontrol != ""; })
+    .filter(function(d){ return d.srtcontrol != "" and d.name == "Slides"; })
     .append("h4")
     .text("")
   ;
   bio
-    .filter(function(d){ return d.srtcontrol != ""; })
+    .filter(function(d){ return d.srtcontrol != "" and d.name == "Slides"; })
     .append("span")
     .append("a")
     .attr("href", function(d){ return d.srtcontrol })
     .attr("target", "_blank")
-    .text("Control SRT >>")
+    .text("Control the SRT >>")
   ;
   bio
-    .filter(function(d){ return d.srtreduc != ""; })
+    .filter(function(d){ return d.srtreduc != "" and d.name == "Slides"; })
     .append("h4")
     .text("")
   ;
   bio
-    .filter(function(d){ return d.srtreduc != ""; })
+    .filter(function(d){ return d.srtreduc != "" and d.name == "Slides"; })
     .append("span")
     .append("a")
     .attr("href", function(d){ return d.srtreduc })
@@ -208,4 +208,3 @@ bio = details
   ;
   
 })
-
