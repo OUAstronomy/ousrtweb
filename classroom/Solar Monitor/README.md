@@ -1,8 +1,4 @@
-        //   ) )
-       ((         ___     //  ___      __
-         \\     //   ) ) // //   ) ) //  ) )
-           ) ) //   / / // //   / / //
-    ((___ / / ((___/ / // ((___( ( //
+Solar Monitoring
 ---------------------------------------------
 
 DESC: Monitor variations in the sun to measure periods of activity

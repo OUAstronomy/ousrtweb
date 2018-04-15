@@ -1,3 +1,5 @@
+Download All Projects
+-------------------------------
 DESC: Download all the projects at once
 
 The generatedirectories.sh file:

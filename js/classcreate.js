@@ -105,33 +105,6 @@ d3.json("./classroom.json", function(data) {
       return d.desc;
    })
   ;
-  //Generalized functions for panel generation, Example data, Instructor Data
-  bio
-    .filter(function(d){ return d.data != "" && d.name != "Slides" && d.name != "Codes" && d.name != "Manuals" && d.name != "Download All"; })
-    .append("h4")
-    .text("Example Data:")
-  ;
-  bio
-    .filter(function(d){ return d.data != "" && d.name != "Slides" && d.name != "Codes" && d.name != "Manuals" && d.name != "Download All"; })
-    .append("span")
-    .append("a")
-    .attr("href", function(d){ return d.data })
-    .attr("target", "_blank")
-    .text("Download Package >>")
-  ;
-  bio
-    .filter(function(d){ return d.instructor != "" && d.name != "Slides" && d.name != "Codes" && d.name != "Manuals" && d.name != "Download All"; })
-    .append("h4")
-    .text("Instructor:")
-  ;
-  bio
-    .filter(function(d){ return d.instructor != "" && d.name != "Slides" && d.name != "Codes" && d.name != "Manuals" && d.name != "Download All"; })
-    .append("span")
-    .append("a")
-    .attr("href", function(d){ return d.instructor })
-    .attr("target", "_blank")
-    .text("Download Package >>")
-  ;
   //For all panels readme
   bio
     .filter(function(d){ return d.directions != ""; })
@@ -143,6 +116,33 @@ d3.json("./classroom.json", function(data) {
     .append("span")
     .append("a")
     .attr("href", function(d){ return d.directions })
+    .attr("target", "_blank")
+    .text("Download Package >>")
+  ;
+  //Generalized functions for panel generation, Example data, Instructor Data
+  bio
+    .filter(function(d){ return d.data != "" && d.name != "Observing" && d.name != "Codes" && d.name != "Download All"; })
+    .append("h4")
+    .text("Example Data:")
+  ;
+  bio
+    .filter(function(d){ return d.data != "" && d.name != "Observing" && d.name != "Codes" && d.name != "Download All"; })
+    .append("span")
+    .append("a")
+    .attr("href", function(d){ return d.data })
+    .attr("target", "_blank")
+    .text("Download Package >>")
+  ;
+  bio
+    .filter(function(d){ return d.instructor != "" && d.name != "Observing" && d.name != "Codes" && d.name != "Download All"; })
+    .append("h4")
+    .text("Instructor:")
+  ;
+  bio
+    .filter(function(d){ return d.instructor != "" && d.name != "Observing" && d.name != "Codes" && d.name != "Download All"; })
+    .append("span")
+    .append("a")
+    .attr("href", function(d){ return d.instructor })
     .attr("target", "_blank")
     .text("Download Package >>")
   ;
@@ -160,17 +160,16 @@ d3.json("./classroom.json", function(data) {
     .attr("target", "_blank")
     .text("Download Package >>")
   ;
-  // for manuals panel
   bio
-    .filter(function(d){ return d.manuals != "" && d.name == "Manuals"; })
+    .filter(function(d){ return d.reduc != "" && d.name == "Codes"; })
     .append("h4")
-    .text("Manuals:")
+    .text("Slides:")
   ;
   bio
-    .filter(function(d){ return d.manuals != "" && d.name == "Manuals"; })
+    .filter(function(d){ return d.reduc != "" && d.name == "Codes"; })
     .append("span")
     .append("a")
-    .attr("href", function(d){ return d.manuals })
+    .attr("href", function(d){ return d.reduc })
     .attr("target", "_blank")
     .text("Download Package >>")
   ;
@@ -188,56 +187,69 @@ d3.json("./classroom.json", function(data) {
     .attr("target", "_blank")
     .text("Download Package >>")
   ;
-  //For slides panel
+  //For Observing panel
   bio
-    .filter(function(d){ return d.srtintroou != "" && d.name == "Slides"; })
+    .filter(function(d){ return d.manuals != "" && d.name == "Observing"; })
+    .append("h4")
+    .text("Manuals")
+  ;
+  bio
+    .filter(function(d){ return d.manuals != "" && d.name == "Observing"; })
+    .append("span")
+    .append("a")
+    .attr("href", function(d){ return d.manuals })
+    .attr("target", "_blank")
+    .text("Download >>")
+  ;
+  bio
+    .filter(function(d){ return d.srtintroou != "" && d.name == "Observing"; })
     .append("h4")
     .text("Slides:")
   ;
   bio
-    .filter(function(d){ return d.srtintroou != "" && d.name == "Slides"; })
+    .filter(function(d){ return d.srtintroou != "" && d.name == "Observing"; })
     .append("span")
     .append("a")
     .attr("href", function(d){ return d.srtintroou })
     .attr("target", "_blank")
-    .text("Intro to SRT (OU) >>")
+    .text("SRT Intro(OU) >>")
   ;
   bio
-    .filter(function(d){ return d.srtintro != "" && d.name == "Slides"; })
+    .filter(function(d){ return d.srtintro != "" && d.name == "Observing"; })
     .append("h4")
     .text("")
   ;
   bio
-    .filter(function(d){ return d.srtintro != "" && d.name == "Slides"; })
+    .filter(function(d){ return d.srtintro != "" && d.name == "Observing"; })
     .append("span")
     .append("a")
     .attr("href", function(d){ return d.srtintro })
     .attr("target", "_blank")
-    .text("Intro to SRT (external) >>")
+    .text("SRT Intro(remote) >>")
   ;
   bio
-    .filter(function(d){ return d.srtcontrol != "" && d.name == "Slides"; })
+    .filter(function(d){ return d.srtcontrol != "" && d.name == "Observing"; })
     .append("h4")
     .text("")
   ;
   bio
-    .filter(function(d){ return d.srtcontrol != "" && d.name == "Slides"; })
+    .filter(function(d){ return d.srtcontrol != "" && d.name == "Observing"; })
     .append("span")
     .append("a")
     .attr("href", function(d){ return d.srtcontrol })
     .attr("target", "_blank")
-    .text("Control the SRT >>")
+    .text("Controlling >>")
   ;
   bio
-    .filter(function(d){ return d.srtreduc != "" && d.name == "Slides"; })
+    .filter(function(d){ return d.reduc != "" && d.name == "Observing"; })
     .append("h4")
     .text("")
   ;
   bio
-    .filter(function(d){ return d.srtreduc != "" && d.name == "Slides"; })
+    .filter(function(d){ return d.reduc != "" && d.name == "Observing"; })
     .append("span")
     .append("a")
-    .attr("href", function(d){ return d.srtreduc })
+    .attr("href", function(d){ return d.reduc })
     .attr("target", "_blank")
     .text("Reduce data >>")
   ;

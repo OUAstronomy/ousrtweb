@@ -12,6 +12,7 @@
       "desc": " Houses the codes and scripts useful for reduction and observation",
       "name": "Codes",
       "codes": "https://github.com/OUsrt/SRTscripts/archive/master.zip",
+      "reduc": "./classroom/Codes/ReductionPresentation.pdf",
       "directions": "./classroom/Codes/README.md",
       "bkgnd": "./classroom/Codes/bkgnd.jpg"
     },
@@ -40,11 +41,15 @@
       "bkgnd": "./classroom/HI Mapping/bkgnd.jpg"
     },
     {
-      "desc": " Contains the Hardware and Operator's Manual for the NHN SRT, along with a short cheatsheet for observing",
-      "name": "Manuals",
+      "desc": " Provides slides for teaching about SRT. If you can go to the SRT, use the SRT (OU) slides. Otherwise use the SRT (ex) slides.",
+      "name": "Observing",
       "manuals": "https://github.com/OUsrt/SRTmanuals/archive/master.zip",
-      "directions": "./classroom/Manuals/README.md",
-      "bkgnd": "./classroom/Manuals/bkgnd.jpg"
+      "srtintroou": "./classroom/Observing/GeneralPresentation.pdf",
+      "srtintro": "./classroom/Observing/OUPresentation.pdf",
+      "srtcontrol": "./classroom/Observing/ControlPresentation.pdf",
+      "reduc": "./classroom/Observing/ReductionPresentation.pdf",
+      "directions": "./classroom/Observing/README.md",
+      "bkgnd": "./classroom/Observing/bkgnd.jpg"
     },
     {
       "desc": " Find the rotation curve of the milky way galaxy",
@@ -53,16 +58,6 @@
       "instructor": "./classroom/Position Velocity/instructor.tar.gz",
       "directions": "./classroom/Position Velocity/README.md",
       "bkgnd": "./classroom/Position Velocity/bkgnd.jpg"
-    },
-    {
-      "desc": " Provides slides for teaching about SRT. If you can go to the SRT, use the SRT (OU) slides. Otherwise use the SRT (ex) slides.",
-      "name": "Slides",
-      "srtintroou": "./classroom/Slides/GeneralPresentation.pdf",
-      "srtintro": "./classroom/Slides/OUPresentation.pdf",
-      "srtcontrol": "./classroom/Slides/ControlPresentation.pdf",
-      "srtreduc": "./classroom/Slides/ReductionPresentation.pdf",
-      "directions": "./classroom/Slides/README.md",
-      "bkgnd": "./classroom/Slides/bkgnd.jpg"
     },
     {
       "desc": " Monitor variations in the sun to measure periods of activity",

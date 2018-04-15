@@ -42,7 +42,7 @@ echo "  \"modules\": [" >> "$json"
 
 # copy files to this new directory for archiving: prevents recursion
 for f in *; do
-    if [ -d "$f" ] && [ ! -L "$f" ] && [ "$f" != "allprojects" ] && [ "$f" != "Download All" ] && [ "$f" != "Manuals" ] && [ "$f" != "Codes" ] && [ "$f" != "Slides" ]; then
+    if [ -d "$f" ] && [ ! -L "$f" ] && [ "$f" != "allprojects" ] && [ "$f" != "Download All" ] && [ "$f" != "Codes" ] && [ "$f" != "Observing" ]; then
         # handles json file
         echo "    {" >> "$json"
         DESC=`head -n 20 "$f/README.md" | grep "DESC"`
@@ -78,28 +78,6 @@ for f in *; do
         echo "      \"bkgnd\": \"./classroom/$f/bkgnd.jpg\"" >> "$json"
         echo "    }," >> "$json"
     fi
-    if [ -d "$f" ] && [ ! -L "$f" ] && [ "$f" == "Manuals" ]; then
-        # handles json file
-        echo "    {" >> "$json"
-        DESC=`head -n 20 "$f/README.md" | grep "DESC"`
-        DESC="${DESC:5}"
-        echo "      \"desc\": \"$DESC\"," >> "$json"
-        echo "      \"name\": \"$f\"," >> "$json"
-        echo "      \"manuals\": \"https://github.com/OUsrt/SRTmanuals/archive/master.zip\"," >> "$json"
-        echo "      \"directions\": \"./classroom/$f/README.md\"," >> "$json"
-        echo "      \"bkgnd\": \"./classroom/$f/bkgnd.jpg\"" >> "$json"
-        echo "    }," >> "$json"
-        # copies all files to allprojects
-        cp -r "$f" "$NWD/allprojects/"
-        temp="`pwd`"
-        cd "$f"
-        for k in *; do
-            if [ -d "$k" ] && [ ! -L "$k" ]; then
-                tar -czf "$k.tar.gz" "$k"
-            fi
-        done
-        cd "$temp"
-    fi
     if [ -d "$f" ] && [ ! -L "$f" ] && [ "$f" == "Codes" ]; then
         # handles json file
         echo "    {" >> "$json"
@@ -108,6 +86,7 @@ for f in *; do
         echo "      \"desc\": \"$DESC\"," >> "$json"
         echo "      \"name\": \"$f\"," >> "$json"
         echo "      \"codes\": \"https://github.com/OUsrt/SRTscripts/archive/master.zip\"," >> "$json"
+        echo "      \"reduc\": \"./classroom/$f/ReductionPresentation.pdf\"," >> "$json"
         echo "      \"directions\": \"./classroom/$f/README.md\"," >> "$json"
         echo "      \"bkgnd\": \"./classroom/$f/bkgnd.jpg\"" >> "$json"
         echo "    }," >> "$json"
@@ -122,17 +101,18 @@ for f in *; do
         done
         cd "$temp"
     fi
-    if [ -d "$f" ] && [ ! -L "$f" ] && [ "$f" == "Slides" ]; then
+    if [ -d "$f" ] && [ ! -L "$f" ] && [ "$f" == "Observing" ]; then
         # handles json file
         echo "    {" >> "$json"
         DESC=`head -n 20 "$f/README.md" | grep "DESC"`
         DESC="${DESC:5}"
         echo "      \"desc\": \"$DESC\"," >> "$json"
         echo "      \"name\": \"$f\"," >> "$json"
+        echo "      \"manuals\": \"https://github.com/OUsrt/SRTmanuals/archive/master.zip\"," >> "$json"
         echo "      \"srtintroou\": \"./classroom/$f/GeneralPresentation.pdf\"," >> "$json"
         echo "      \"srtintro\": \"./classroom/$f/OUPresentation.pdf\"," >> "$json"
         echo "      \"srtcontrol\": \"./classroom/$f/ControlPresentation.pdf\"," >> "$json"
-        echo "      \"srtreduc\": \"./classroom/$f/ReductionPresentation.pdf\"," >> "$json"
+        echo "      \"reduc\": \"./classroom/$f/ReductionPresentation.pdf\"," >> "$json"
         echo "      \"directions\": \"./classroom/$f/README.md\"," >> "$json"
         echo "      \"bkgnd\": \"./classroom/$f/bkgnd.jpg\"" >> "$json"
         echo "    }," >> "$json"
