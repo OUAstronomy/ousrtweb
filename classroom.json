@@ -11,8 +11,7 @@
     {
       "desc": " Houses the codes and scripts useful for reduction and observation",
       "name": "Codes",
-      "data": "https://github.com/OUsrt/SRTscripts/archive/master.zip",
-      "instructor": "",
+      "codes": "https://github.com/OUsrt/SRTscripts/archive/master.zip",
       "directions": "./classroom/Codes/README.md",
       "bkgnd": "./classroom/Codes/bkgnd.jpg"
     },
@@ -43,8 +42,7 @@
     {
       "desc": " Contains the Hardware and Operator's Manual for the NHN SRT, along with a short cheatsheet for observing",
       "name": "Manuals",
-      "data": "https://github.com/OUsrt/SRTmanuals/archive/master.zip",
-      "instructor": "",
+      "manuals": "https://github.com/OUsrt/SRTmanuals/archive/master.zip",
       "directions": "./classroom/Manuals/README.md",
       "bkgnd": "./classroom/Manuals/bkgnd.jpg"
     },
