@@ -12,6 +12,7 @@ d3.json("./classroom.json", function(data) {
     .append("div")
     .attr("class", "char")
   ;
+  // setup background image per panel
   chars
     .style("background-image", function(d){
       return 'url("./classroom/'+d.name+'/bkgnd.jpg")';
@@ -67,7 +68,7 @@ d3.json("./classroom.json", function(data) {
      .append("div")
      .attr("class", "details")
   ;
- 
+  // holds image when panel clicked
   imageHolder = details
    .filter(function(d){ return d.charThumb != ""; })
    .append("div")
@@ -80,7 +81,8 @@ d3.json("./classroom.json", function(data) {
       return './classroom/'+d.name+'/expanded.png';
    })
   ;
-bio = details
+  // setup panel name
+  bio = details
     .append("div")
     .attr("class", "bio")
   ;
@@ -90,6 +92,7 @@ bio = details
       return d.name;
     })
   ;
+  // Reads readme for description of panel
   bio
     .filter(function(d){ return d.desc != ""; })
     .append("h4")
@@ -102,13 +105,14 @@ bio = details
       return d.desc;
    })
   ;
+  //Generalized functions for panel generation, Example data, Instructor Data
   bio
-    .filter(function(d){ return d.data != "" && d.name != "Slides"; })
+    .filter(function(d){ return d.data != "" && d.name != "Slides" && d.name != "Codes" && d.name != "Manuals" && d.name != "Download All"; })
     .append("h4")
     .text("Example Data:")
   ;
   bio
-    .filter(function(d){ return d.data != "" && d.name != "Slides"; })
+    .filter(function(d){ return d.data != "" && d.name != "Slides" && d.name != "Codes" && d.name != "Manuals" && d.name != "Download All"; })
     .append("span")
     .append("a")
     .attr("href", function(d){ return d.data })
@@ -116,18 +120,19 @@ bio = details
     .text("Download Package >>")
   ;
   bio
-    .filter(function(d){ return d.instructor != "" && d.name != "Slides"; })
+    .filter(function(d){ return d.instructor != "" && d.name != "Slides" && d.name != "Codes" && d.name != "Manuals" && d.name != "Download All"; })
     .append("h4")
     .text("Instructor:")
   ;
   bio
-    .filter(function(d){ return d.instructor != "" && d.name != "Slides"; })
+    .filter(function(d){ return d.instructor != "" && d.name != "Slides" && d.name != "Codes" && d.name != "Manuals" && d.name != "Download All"; })
     .append("span")
     .append("a")
     .attr("href", function(d){ return d.instructor })
     .attr("target", "_blank")
     .text("Download Package >>")
   ;
+  //For all panels readme
   bio
     .filter(function(d){ return d.directions != ""; })
     .append("h4")
@@ -141,6 +146,49 @@ bio = details
     .attr("target", "_blank")
     .text("Download Package >>")
   ;
+  //for codes panel
+  bio
+    .filter(function(d){ return d.codes != "" && d.name == "Codes"; })
+    .append("h4")
+    .text("Codes:")
+  ;
+  bio
+    .filter(function(d){ return d.codes != "" && d.name == "Codes"; })
+    .append("span")
+    .append("a")
+    .attr("href", function(d){ return d.codes })
+    .attr("target", "_blank")
+    .text("Download Package >>")
+  ;
+  // for manuals panel
+  bio
+    .filter(function(d){ return d.manuals != "" && d.name == "Manuals"; })
+    .append("h4")
+    .text("Manuals:")
+  ;
+  bio
+    .filter(function(d){ return d.manuals != "" && d.name == "Manuals"; })
+    .append("span")
+    .append("a")
+    .attr("href", function(d){ return d.manuals })
+    .attr("target", "_blank")
+    .text("Download Package >>")
+  ;
+  //For download All panel
+  bio
+    .filter(function(d){ return d.data != "" && d.name == "Download All"; })
+    .append("h4")
+    .text("All Data:")
+  ;
+  bio
+    .filter(function(d){ return d.data != "" && d.name == "Download All"; })
+    .append("span")
+    .append("a")
+    .attr("href", function(d){ return d.data })
+    .attr("target", "_blank")
+    .text("Download Package >>")
+  ;
+  //For slides panel
   bio
     .filter(function(d){ return d.srtintroou != "" && d.name == "Slides"; })
     .append("h4")
@@ -193,6 +241,7 @@ bio = details
     .attr("target", "_blank")
     .text("Reduce data >>")
   ;
+  //
   d3
     .select("#orderName")
     .on("click", function () {
